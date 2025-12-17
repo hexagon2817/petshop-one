@@ -1,0 +1,414 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+/* ===========================
+   NAVBAR — CLEAN VERSION
+=========================== */
+
+:root {
+    --primary-color: #13ec5b;
+    --primary-dark: #0eb545;
+}
+
+/* Navbar base */
+.navbar {
+    padding: 1rem 0;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(16px);      /* smooth glass effect */
+    border-bottom: 1px solid rgba(148, 163, 184, 0.25);
+    transition: all 0.3s ease;
+}
+
+/* Brand Icon */
+.navbar-brand i {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+/* Nav Links */
+.nav-link {
+    font-weight: 500;
+    margin: 0 0.5rem;
+    position: relative;
+    color: #475569 !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #0f172a !important;
+}
+
+/* Underline hover + active effect */
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+/* Buttons in navbar */
+.btn-primary-soft {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #000;
+    font-weight: 600;
+    padding: 0.45rem 1.3rem;
+    border-radius: 999px;
+    transition: all 0.3s ease;
+    /* box-shadow: 0 10px 25px rgba(19, 236, 91, 0.35); */
+}
+
+.btn-primary-soft:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 35px rgba(19, 236, 91, 0.5);
+}
+
+/* Mobile navbar toggler */
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.25);
+    border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+/* Custom Styles for PetPals About Page */
+
+:root {
+    --primary-color: #13ec5b;
+    --primary-dark: #0eb545;
+    --secondary-color: #6c757d;
+    --light-bg: #f8f9fa;
+    --dark-bg: #212529;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.about-hero {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9f5e9 100%);
+    padding-top: 50px;
+}
+
+/* Icon Wrapper */
+.icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: rgba(19, 236, 91, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.icon-wrapper i {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+/* Cards */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.team-card img {
+    height: 250px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+/* Milestone Cards */
+.milestone-card {
+    transition: all 0.3s ease;
+}
+
+.milestone-card:hover {
+    transform: translateX(10px);
+}
+
+/* Stats Box */
+.stats-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-box::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+}
+
+.stat-number {
+    font-size: 3.5rem;
+}
+
+.stat-label {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;  /* ⬅ left align */
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.cta-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 26px;
+  font-size: 1rem;
+  border-radius: 12px;
+  font-weight: 600;
+  height: 48px;
+}
+
+/* Volunteer button */
+.cta-btn-volunteer {
+  background: #ffffff;
+  color: #000;
+  border: none;
+}
+
+/* Donate button */
+.cta-btn-donate {
+  background: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .stat-number {
+        font-size: 2.5rem;
+    }
+    
+    .about-hero {
+        text-align: center;
+    }
+    
+    .stats-box {
+        margin-top: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======= FOOTER ======= */
+
+.site-footer {
+  width: 100%;
+  background-color: #ffffff;           /* white like design */
+  border-top: 1px solid #e5e7eb;       /* subtle line from section above */
+}
+
+.footer-top {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-logo a {
+  text-decoration: none;
+}
+
+/* Logo circle */
+.footer-logo-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: rgba(0, 212, 106, 0.12); /* soft green tint */
+  color: #00d46a;
+  font-size: 16px;
+}
+
+/* Main paragraph */
+.footer-text {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+/* Social icons */
+.footer-social-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  background-color: #f3f4f6;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #4b5563;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.footer-social-btn:hover {
+  background-color: #13EC5B;
+  color: #111827;
+}
+
+/* Column headings + links */
+.footer-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #020617;
+}
+
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #64748b;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #00d46a;
+}
+
+/* Contact items with icons */
+.footer-contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+}
+
+.footer-contact i {
+  margin-top: 2px;
+  font-size: 0.9rem;
+  color: #9ca3af;
+}
+
+.footer-contact span {
+  color: #64748b;
+}
+
+/* Divider & bottom row */
+.footer-divider {
+  border-color: #e5e7eb;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-bottom span {
+  color: #aaa;
+  font-size: 12px;
+}
+
+.footer-bottom span a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+.footer-bottom-text {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+.footer-bottom-links a {
+  font-size: 0.8rem;
+  text-decoration: none;
+  color: #9ca3af;
+  transition: color 0.2s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: #111827;
+}

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet-Shop Contact</title>
+
+    <link rel="stylesheet" href="./fontawsome/css/all.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css-folder/contact.css" />
+  </head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-blur sticky-top">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="./index.html">
+          <i class="fa-solid fa-paw fs-3 text-primary-color"></i>
+          <span class="fw-bold">PetPals</span>
+        </a>
+
+        <button
+  class="navbar-toggler"
+  type="button"
+  data-bs-toggle="collapse"
+  data-bs-target="#mainNavbar"
+  aria-controls="mainNavbar"
+  aria-expanded="false"
+  aria-label="Toggle navigation"
+>
+  <!-- Default icon -->
+  <i class="fa-solid fa-bars fs-3"></i>
+  <!-- Close icon -->
+  <i class="fa-solid fa-xmark fs-3 d-none"></i>
+</button>
+
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="./index.html">Home</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link fw-medium" href="#">Adopt</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="#">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-medium" href="#">Contact</a>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-2">
+            <!-- <button class="btn btn-light btn-pill d-none d-sm-inline-flex px-4">
+              Login
+            </button> -->
+            <button
+              class="btn btn-primary-soft btn-pill d-inline-flex align-items-center gap-2 px-4"
+            >
+              <i class="fa-solid fa-heart"></i>
+              <span>Donate</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+        <!-- Contact Section -->
+<section id="contact" class="contact-section position-relative overflow-hidden py-5 py-md-6">
+  <!-- Decorative gradient blobs -->
+  <div class="contact-blob contact-blob-1"></div>
+  <div class="contact-blob contact-blob-2"></div>
+
+  <!-- Floating paws -->
+  <i class="fa-solid fa-paw floating-paw paw-1"></i>
+  <i class="fa-solid fa-paw floating-paw paw-2"></i>
+  <i class="fa-solid fa-paw floating-paw paw-3"></i>
+
+  <div class="container position-relative">
+    <div class="row g-4 g-lg-5 align-items-center">
+      <!-- Left Content -->
+      <div class="col-lg-5">
+        <div class="contact-badge mb-3 d-inline-flex align-items-center px-3 py-1 rounded-pill">
+          <span class="contact-badge-dot me-2"></span>
+          <span class="text-uppercase fw-semibold small">Let’s talk about your pet</span>
+        </div>
+
+        <h2 class="display-6 fw-bold mb-3">
+          Get in touch with the <span class="text-primary-accent">PetPals</span> team 🐾
+        </h2>
+
+        <p class="text-muted mb-4">
+          Whether it's adoption, volunteering, or donations, we’re here to help 
+          you make tails wag and hearts happy. Drop us a message and we’ll respond super fast.
+        </p>
+
+        <div class="d-flex flex-column gap-3 mb-4">
+          <!-- Info Item -->
+          <div class="d-flex gap-3 align-items-start contact-info-item">
+            <div class="icon-circle flex-shrink-0">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div>
+              <h6 class="mb-1 fw-semibold">Visit our shelter</h6>
+              <p class="mb-0 small text-muted">
+                123 Pet Lane, Pawsome City, PC 12345
+              </p>
+            </div>
+          </div>
+
+          <!-- Info Item -->
+          <div class="d-flex gap-3 align-items-start contact-info-item">
+            <div class="icon-circle flex-shrink-0">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <h6 class="mb-1 fw-semibold">Call us</h6>
+              <p class="mb-0 small text-muted">
+                (555) 123-4567 (Mon–Sat, 9am–6pm)
+              </p>
+            </div>
+          </div>
+
+          <!-- Info Item -->
+          <div class="d-flex gap-3 align-items-start contact-info-item">
+            <div class="icon-circle flex-shrink-0">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <h6 class="mb-1 fw-semibold">Email support</h6>
+              <p class="mb-0 small text-muted">
+                hello@petpals.org
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Small “stats” row -->
+        <div class="d-flex flex-wrap gap-3 align-items-center">
+          <div class="pill-stat">
+            <i class="fa-solid fa-bolt me-2"></i>
+            <span class="small fw-semibold">Avg response: under 24 hrs</span>
+          </div>
+          <div class="pill-stat pill-stat-soft">
+            <i class="fa-solid fa-heart me-2"></i>
+            <span class="small">Trusted by 5K+ pet lovers</span>
+          </div>
+        </div>
+
+        <!-- Social icons -->
+        <div class="mt-4 d-flex align-items-center gap-3">
+          <span class="small text-muted">Or reach us on</span>
+          <div class="d-flex gap-2">
+            <a href="#" class="social-circle"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-circle"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-circle"><i class="fa-brands fa-x-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="col-lg-7">
+        <div class="contact-card glass-card shadow-lg p-4 p-md-5">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+              <h3 class="h4 fw-bold mb-1">Send us a message</h3>
+              <p class="text-muted small mb-0">
+                Fill out the form and we’ll get back to you as soon as possible.
+              </p>
+            </div>
+            <div class="contact-status-pill d-flex align-items-center px-3 py-1 rounded-pill">
+              <span class="status-dot me-2"></span>
+              <span class="small fw-semibold">Online now</span>
+            </div>
+          </div>
+
+          <form id="contactForm" novalidate>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="name" class="form-label small fw-semibold">Full Name</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-user input-icon"></i>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+                <div class="invalid-feedback small">
+                  Please enter your name.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="email" class="form-label small fw-semibold">Email Address</label>
+                <div class="input-wrapper">
+                  <i class="fa-regular fa-envelope input-icon"></i>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    required
+                  />
+                </div>
+                <div class="invalid-feedback small">
+                  Please enter a valid email.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="subject" class="form-label small fw-semibold">Subject</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-message input-icon"></i>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    name="subject"
+                    placeholder="How can we help?"
+                    required
+                  />
+                </div>
+                <div class="invalid-feedback small">
+                  Please enter a subject.
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="topic" class="form-label small fw-semibold">Topic</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-paw input-icon"></i>
+                  <select
+                    id="topic"
+                    name="topic"
+                    class="form-select"
+                    required
+                  >
+                    <option value="" selected disabled>Select a topic</option>
+                    <option value="adoption">Pet Adoption</option>
+                    <option value="donation">Donations</option>
+                    <option value="volunteer">Volunteering</option>
+                    <option value="other">Something else</option>
+                  </select>
+                </div>
+                <div class="invalid-feedback small">
+                  Please choose a topic.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="message" class="form-label small fw-semibold">Message</label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-regular fa-comment-dots input-icon"></i>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Write your message here..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="invalid-feedback small">
+                  Please enter a message.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="privacyCheck"
+                    required
+                  />
+                  <label class="form-check-label small" for="privacyCheck">
+                    I agree to the <a href="#" class="link-underline-primary">privacy policy</a>.
+                  </label>
+                  <div class="invalid-feedback small">
+                    You must agree before submitting.
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 d-flex align-items-center justify-content-between gap-3 mt-2">
+                <button id="contactSubmitBtn" type="submit" class="btn btn-primary-accent px-4 py-2 fw-semibold d-inline-flex align-items-center">
+                  <span class="btn-spinner me-2 d-none">
+                    <i class="fa-solid fa-circle-notch fa-spin"></i>
+                  </span>
+                  <span class="btn-text">
+                    <i class="fa-solid fa-paper-plane me-2"></i>
+                    Send Message
+                  </span>
+                </button>
+                <span class="small text-muted">
+                  <i class="fa-regular fa-clock me-1"></i>
+                  We usually reply in a few hours
+                </span>
+              </div>
+            </div>
+
+            <div id="contactStatus" class="mt-3"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    </main>
+    
+
+    <footer class="site-footer py-5">
+      <div class="container">
+        <!-- Top part -->
+        <div class="row g-4 footer-top mb-4">
+          <!-- Brand + text + socials -->
+          <div class="col-md-4">
+            <div class="d-flex align-items-center gap-2 mb-3 footer-logo">
+              <span
+                class="footer-logo-icon d-inline-flex align-items-center justify-content-center"
+              >
+                <i class="fa-solid fa-paw"></i>
+              </span>
+              <a href="./index.html" class="fs-5 fw-bold">PetPals</a>
+            </div>
+
+            <p class="footer-text mb-3">
+              We are a non-profit organization dedicated to finding loving homes
+              for every pet in need. Join us in our mission.
+            </p>
+
+            <div class="d-flex gap-2">
+              <a href="#" class="footer-social-btn">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="#" class="footer-social-btn">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#" class="footer-social-btn">
+                <i class="fa-brands fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Adopt -->
+          <div class="col-6 col-md-2">
+            <h4 class="footer-heading">Adopt</h4>
+            <ul class="footer-links">
+              <li><a href="#">Adopt a Dog</a></li>
+              <li><a href="#">Adopt a Cat</a></li>
+              <li><a href="#">Small Pets</a></li>
+              <li><a href="#">Success Stories</a></li>
+            </ul>
+          </div>
+
+          <!-- Get Involved -->
+          <div class="col-6 col-md-3">
+            <h4 class="footer-heading">Get Involved</h4>
+            <ul class="footer-links">
+              <li><a href="#">Volunteer</a></li>
+              <li><a href="#">Donate</a></li>
+              <li><a href="#">Partner with Us</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="col-12 col-md-3">
+            <h4 class="footer-heading">Contact</h4>
+            <ul class="footer-links footer-contact">
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <span>123 Pet Lane, Pawsome City, PC 12345</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <span>(555) 123–4567</span>
+              </li>
+              <li>
+                <i class="fa-regular fa-envelope"></i>
+                <span>hello@petpals.org</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Divider line -->
+        <hr class="footer-divider my-3" />
+
+        <!-- Bottom bar -->
+        <div
+          class="footer-bottom d-flex flex-column flex-md-row align-items-center justify-content-between gap-2 pt-1"
+        >
+          <p class="mb-0 footer-bottom-text">
+            © 2024 PetPals. All rights reserved.
+          </p>
+
+          <span
+            >❤️ Proudly developed by
+            <a href="https://designglobal.in/"> Design Global Technology</a>
+          </span>
+
+          <div class="d-flex gap-3 footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js-folder/contact.js"></script>
+</body>
+</html>
